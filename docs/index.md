@@ -3,17 +3,17 @@
   title: ""
 ---
 
-# AddressBook Level-3
+# ServeMate
 
 [![CI Status](https://github.com/AY2526S2-CS2103T-W14-2/tp/workflows/Java%20CI/badge.svg)](https://github.com/AY2526S2-CS2103T-W14-2/tp/actions)
 [![codecov](https://codecov.io/gh/AY2526S2-CS2103T-W14-2/tp/branch/master/graph/badge.svg)](https://codecov.io/gh/AY2526S2-CS2103T-W14-2/tp)
 
 ![Ui](images/Ui.png)
 
-**AddressBook is a desktop application for managing your contact details.** While it has a GUI, most of the user interactions happen using a CLI (Command Line Interface).
+**ServeMate is a desktop address book created for administrative staff for tingkat food delivery to manage their customer contacts for delivery planning.** While it has a GUI, most of the user interactions happen using a CLI (Command Line Interface).
 
-* If you are interested in using AddressBook, head over to the [_Quick Start_ section of the **User Guide**](UserGuide.html#quick-start).
-* If you are interested about developing AddressBook, the [**Developer Guide**](DeveloperGuide.html) is a good place to start.
+* If you are interested in using ServeMate, head over to the [_Quick Start_ section of the **User Guide**](UserGuide.html#quick-start).
+* If you are interested about developing ServeMate, the [**Developer Guide**](DeveloperGuide.html) is a good place to start.
 
 
 **Acknowledgements**
