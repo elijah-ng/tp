@@ -272,7 +272,7 @@ _{Explain here how the data archiving feature will be implemented}_
 
 ### Product scope
 
-**Target user profile**:
+#### Target user profile
 
 * handle the **planning and administration of deliveries** for tingkat caterers
 * has a need to **manage a significant number** of customers
@@ -281,7 +281,8 @@ _{Explain here how the data archiving feature will be implemented}_
 * **prefers typing** to mouse interactions
 * is **reasonably comfortable using** CLI apps
 
-**Value proposition**: Provides fast and organised solution for tingkat caterers to manage their customer information for delivery planning
+#### Value proposition
+* Provides fast and organised solution for tingkat caterers to manage their customer information for delivery planning
 
 
 
@@ -313,7 +314,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `*`      | expert user   | mass copy emails and contact numbers to clipboard       | mass email and message customer about upcoming promotions                                            |
 | `*`      | expert user   | view free time slots                                    | schedule new deliveries for new customers                                                            |
 | `*`      | expert user   | track the total revenue from a customer                 | know how much I have earned from a customer                                                          |
-| `*`      | expert user   | track number of faus subscribed by a customer so far    | know who are my loyal customers                                                                      |
+| `*`      | expert user   | track number of days subscribed by a customer so far    | know who are my loyal customers                                                                      |
 | `*`      | expert user   | back up customer and route data                         | ensure that delivery operations are not disrupted by data loss                                       |
 | `*`      | expert user   | archive customers data                                  | see only the relevant data for currently subscribed customers                                        |
 
