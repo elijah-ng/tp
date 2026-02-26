@@ -399,6 +399,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **Command**: A user input that triggers a specific action in the application (e.g., `add`, `delete`, `list`).
 * **Singapore Address Format:** A sequence of elements used to physically locate buildings, in the form `<Block Number>, <Street Name>, <Unit Number (if any)>, Singapore <Postal Code>` (e.g., 757 Woodlands Ave 4, #04-27, Singapore 730757).
 * **Singapore Phone Number Format:** A 8-digit number containing no spaces used for telecommunications within Singapore (e.g., `81234567`).
+* **JSON**: JavaScript Object Notation (JSON) is a file format for storing and transmitting data as human-readable text.
+* **JAR**: Java Archive (JAR) is a file format that can be used to compress and bundle multiple files associated with a Java application into a single file for ease of distribution and execution.
 
 --------------------------------------------------------------------------------------------------------------------
 
