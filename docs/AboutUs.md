@@ -55,7 +55,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 <img src="images/elijah-ng.png" width="200px">
 
 [[github](https://github.com/elijah-ng)]
-[[portfolio](team/elijahng.md)]
+[[portfolio](team/elijah-ng.md)]
 
 * Role: Developer
 * Responsibilities: Document project tasks and meeting notes. Ensure project deliverables are done on time and in the right format.  
