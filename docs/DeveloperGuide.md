@@ -361,9 +361,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 #### 💻 Portability
 1. The system should support **any mainstream OS** with Java `17` or higher.
-2. The system should deliver the product as a **single, executable JAR file**.
+2. The application should be packaged into a single JAR file or a single zip file, with a maximum size of 100MB.
 3. The system should function as a **standalone product** that does not require additional user installations.
-4. The application should be packaged into a single JAR file or a single zip file, with a maximum size of 100MB.
 
 #### ⌨️ Usability
 1. A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
@@ -374,8 +373,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 1. The system should remain **responsive** even when managing 1000 customer records.
 
 #### 💾 Data Persistence
-1. The application should not use a Database Management System (DBMS) to store data.
-2. The application should store data locally in a human editable text file (e.g. in JSON format).
+1. The application should store data locally in a human editable text file (e.g. in JSON format). It should not use a Database Management System (DBMS) to store data.
 
 #### 📖 Documentation
 1. The Developer Guide and User Guide should be PDF-friendly (e.g. no expandable panels, embedded videos, animated GIFs, etc.).
@@ -399,8 +397,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **Command**: A user input that triggers a specific action in the application (e.g., `add`, `delete`, `list`).
 * **Singapore Address Format:** A sequence of elements used to physically locate buildings, in the form `<Block Number>, <Street Name>, <Unit Number (if any)>, Singapore <Postal Code>` (e.g., 757 Woodlands Ave 4, #04-27, Singapore 730757).
 * **Singapore Phone Number Format:** A 8-digit number containing no spaces used for telecommunications within Singapore (e.g., `81234567`).
-* **JSON**: JavaScript Object Notation (JSON) is a file format for storing and transmitting data as human-readable text.
-* **JAR**: Java Archive (JAR) is a file format that can be used to compress and bundle multiple files associated with a Java application into a single file for ease of distribution and execution.
+* **JavaScript Object Notation (JSON)**: A file format for storing and transmitting data as human-readable text.
+* **Java Archive (JAR)**: A file format that can be used to compress and bundle multiple files associated with a Java application into a single file for ease of distribution and execution.
 
 --------------------------------------------------------------------------------------------------------------------
 
