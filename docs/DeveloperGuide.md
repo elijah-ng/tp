@@ -351,7 +351,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 1c. A customer with the same name already exists.
 
-    * 1c1. ServeMate shows an error message "This customer already exists".
+    * 1c1. ServeMate shows an error message "This person already exists in the address book".
 
       Use case ends.
 
@@ -373,9 +373,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 3a. The given index is out of range.
+* 3a. The given index is not a positive integer.
 
-    * 3a1. ServeMate shows an error message "The index provided is invalid".
+    * 3a1. ServeMate shows an error message describing the correct command format.
+
+      Use case resumes at step 2.
+
+* 3b. The given index is out of range.
+
+    * 3b1. ServeMate shows an error message "The person index provided is invalid".
 
       Use case resumes at step 2.
 
@@ -397,27 +403,33 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 3a. The given index is out of range.
+* 3a. The given index is not a positive integer.
 
-    * 3a1. ServeMate shows an error message "The index provided is invalid".
-
-      Use case resumes at step 2.
-
-* 3b. No fields are specified for editing.
-
-    * 3b1. ServeMate shows an error message "At least one field to edit must be provided".
+    * 3a1. ServeMate shows an error message describing the correct command format.
 
       Use case resumes at step 2.
 
-* 3c. Any provided field value is invalid.
+* 3b. The given index is out of range.
 
-    * 3c1. ServeMate shows an error message describing the violated constraint.
+    * 3b1. ServeMate shows an error message "The person index provided is invalid".
 
       Use case resumes at step 2.
 
-* 3d. Editing the name causes a duplicate with an existing customer.
+* 3c. No fields are specified for editing.
 
-    * 3d1. ServeMate shows an error message "This customer already exists".
+    * 3c1. ServeMate shows an error message "At least one field to edit must be provided".
+
+      Use case resumes at step 2.
+
+* 3d. Any provided field value is invalid.
+
+    * 3d1. ServeMate shows an error message describing the violated constraint.
+
+      Use case resumes at step 2.
+
+* 3e. Editing the name causes a duplicate with an existing customer.
+
+    * 3e1. ServeMate shows an error message "This person already exists in the address book".
 
       Use case resumes at step 2.
 
