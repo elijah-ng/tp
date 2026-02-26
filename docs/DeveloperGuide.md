@@ -323,16 +323,47 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `ServeMate` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Delete a person**
+**Use case 1: Add a customer**
 
 **MSS**
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1. User requests to add a customer contact with required fields 
+2. ServeMate adds the customer into the customer list 
+3. ServeMate shows a success message with the added customer’s details
+
+    Use case ends.
+
+**Extensions**
+
+* 1a. Any required field is missing.
+
+    * 1a1. ServeMate shows an error message describing the correct command format.
+
+      Use case ends.
+
+* 1b. Any parameter value is invalid.
+
+    * 1b1. ServeMate shows an error message describing the violated constraint.
+
+      Use case ends.
+
+* 1c. A customer with the same name already exists.
+
+    * 1c1. ServeMate shows an error message "This person already exists in the address book".
+
+      Use case ends.
+
+**Use case 2: Delete a customer**
+
+**MSS**
+
+1. User requests to list customers 
+2. ServeMate shows a list of customers 
+3. User requests to delete a customer in the list 
+4. ServeMate deletes the customer
+5. ServeMate shows a confirmation message with the deleted customer’s details
 
     Use case ends.
 
@@ -342,13 +373,94 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 3a. The given index is invalid.
+* 3a. The given index is not a positive integer.
 
-    * 3a1. AddressBook shows an error message.
+    * 3a1. ServeMate shows an error message describing the correct command format.
 
       Use case resumes at step 2.
 
-*{More to be added}*
+* 3b. The given index is out of range.
+
+    * 3b1. ServeMate shows an error message "The person index provided is invalid".
+
+      Use case resumes at step 2.
+
+**Use case 3: Edit customer record**
+
+**MSS**
+
+1. User requests to list customers
+2. ServeMate shows a list of customers
+3. User requests to edit a customer in the list
+4. ServeMate updates the customer record
+5. ServeMate shows a success message with the updated customer’s details
+
+   Use case ends.
+
+**Extensions**
+
+* 2a. The list is empty.
+
+  Use case ends.
+
+* 3a. The given index is not a positive integer.
+
+    * 3a1. ServeMate shows an error message describing the correct command format.
+
+      Use case resumes at step 2.
+
+* 3b. The given index is out of range.
+
+    * 3b1. ServeMate shows an error message "The person index provided is invalid".
+
+      Use case resumes at step 2.
+
+* 3c. No fields are specified for editing.
+
+    * 3c1. ServeMate shows an error message "At least one field to edit must be provided".
+
+      Use case resumes at step 2.
+
+* 3d. Any provided field value is invalid.
+
+    * 3d1. ServeMate shows an error message describing the violated constraint.
+
+      Use case resumes at step 2.
+
+* 3e. Editing the name causes a duplicate with an existing customer.
+
+    * 3e1. ServeMate shows an error message "This person already exists in the address book".
+
+      Use case resumes at step 2.
+
+**Use case 4: Filter customer records**
+
+**MSS**
+
+1. User requests to find customers by providing one or more attributes
+2. ServeMate displays the list of customers that match the given criteria
+
+   Use case ends.
+
+**Extensions**
+
+* 1a. The command format is invalid.
+
+    * 1a1. ServeMate shows an error message describing the correct command format.
+
+      Use case ends.
+
+* 1b. Any provided attribute value violates format constraints.
+
+    * 1b1. ServeMate shows an error message describing the violated constraint.
+
+      Use case ends.
+
+* 2a. No customers match the specified criteria.
+
+    * 2a1. ServeMate shows an empty result list.
+
+      Use case ends.
 
 ### Non-Functional Requirements
 
