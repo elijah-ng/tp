@@ -356,7 +356,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 1. The application should be implemented primarily using the Object-Oriented Paradigm (OOP), where core logic are encapsulated within classes. A small mix of other styles (e.g. lambda expressions from the Functional Programming Paradigm) are allowed if justifiable (e.g. if it improves conciseness or readability within a method).
 
 #### 🚧 Operational Constraints
-1. It should be operated as a single-user application. It should not support shared usage nor share access to data amongst multiple users.
+1. It should be operated as a **single-user** application. It should not support shared usage nor share access to data amongst multiple users.
 2. The application should not depend on its own remote server.
 
 #### 💻 Portability
@@ -373,7 +373,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 1. The system should remain **responsive** even when managing 1000 customer records.
 
 #### 💾 Data Persistence
-1. The application should store data locally in a human editable text file (e.g. in JSON format). It should not use a Database Management System (DBMS) to store data.
+1. The application should store data locally in a human editable text file (e.g. JSON format). It should not use a Database Management System (DBMS) to store data.
 
 #### 📖 Documentation
 1. The Developer Guide and User Guide should be PDF-friendly (e.g. no expandable panels, embedded videos, animated GIFs, etc.).
