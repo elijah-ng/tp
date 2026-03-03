@@ -462,6 +462,116 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
+**Use case 5: View all upcoming deliveries for the day**
+
+**MSS**
+
+1. User requests to view all upcoming deliveries for the day
+2. ServeMate shows a list of all upcoming deliveries for the day
+
+   Use case ends.
+
+**Extensions**
+
+* 1a. ServeMate is unable to find any upcoming deliveries.
+
+    * 1a1. ServeMate shows an empty result list.
+
+      Use case ends.
+
+**Use case 6: Add upcoming delivery**
+
+**MSS**
+
+1. User requests to add a new upcoming delivery with required fields
+2. ServeMate adds the upcoming delivery to the list of upcoming deliveries
+3. ServeMate shows a success message with the added upcoming delivery's details
+
+   Use case ends.
+
+**Extensions**
+
+* 1a. Any required field is missing.
+
+    * 1a1. ServeMate shows an error message describing the correct command format and requests for a new command from the user.
+
+      Use case resumes from step 1.
+
+* 1b. Any parameter value is invalid.
+
+    * 1b1. ServeMate shows an error message describing the violated constraint and requests for a new command from the user.
+
+      Use case resumes from step 1.
+
+* 1c. A delivery to the same customer at the same date and time already exists.
+
+    * 1c1. ServeMate shows an error message describing that a delivery to the same customer at the same date and time already exists.
+
+      Use case ends.
+
+**Use case 7: Delete a particular delivery**
+
+**MSS**
+
+1. User requests to list all upcoming deliveries
+2. ServeMate shows a list of all upcoming deliveries from today onwards
+3. User requests to delete a particular upcoming delivery in the list
+4. ServeMate deletes the particular upcoming delivery
+5. ServeMate shows a confirmation message with the deleted delivery's details
+   Use case ends.
+
+**Extensions**
+
+* 1a. The list of upcoming deliveries is empty.
+
+  Use case ends.
+
+* 3a. The given index is not a positive integer.
+
+  * 3a1. ServeMate shows an error message describing the correct command format and requests for a new command from the user.
+
+    Use case resumes at step 3.
+
+* 3b. The given index is out of range.
+
+  * 3b1. ServeMate shows an error message describing that the index value given is invalid and requests for a new command from the user.
+
+    Use case resumes at step 3.
+
+**Use case 8: Tag customer with delivery note**
+
+**MSS**
+
+1. User requests to list customers
+2. ServeMate shows a list of customers
+3. User requests to tag a customer in the list with a delivery note
+4. ServeMate tags the customer in the customer record with the delivery note
+5. ServeMate shows a success message with the updated customer's details including the delivery note
+
+**Extensions**
+
+* 1a. The list of customers is empty.
+
+  Use case ends.
+
+* 3a. The given index is not a positive integer.
+
+    * 3a1. ServeMate shows an error message describing the correct command format and requests for a new command from the user.
+
+      Use case resumes at step 3.
+
+* 3b. The given index is out of range.
+
+    * 3b1. ServeMate shows an error message describing that the index value given is invalid and requests for a new command from the user.
+
+      Use case resumes at step 3.
+
+* 3c. The given delivery note is empty.
+
+    * 3c1. ServeMate shows an error message describing that the delivery note is missing and requests for a new command from the user.
+  
+      Use case resumes at step 3.
+
 ### Non-Functional Requirements
 
 #### ⚙️ Technical
